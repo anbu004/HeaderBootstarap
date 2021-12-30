@@ -1,0 +1,126 @@
+
+  .time-line-box .timeline {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .time-line-box .timestamp {
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+    height: 5vh;
+
+  }
+  
+  .time-line-box .status {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #d4d3d3b6;
+    position: relative;
+    transition: all 200ms ease-in;
+  }
+  .time-line-box .status span {
+    padding-top: 8px;
+  }
+  .time-line-box .status span:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #d4d3d3b6;
+    border-radius: 12px;
+    border: 2px solid #d4d3d3b6;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 200ms ease-in;
+  }
+  
+  .swiper-wrapper{
+    display: inline-flex;
+    flex-direction: row;
+    overflow-y:auto;
+    justify-content: center;
+    width: 100%;
+  }
+  .swiper-container::-webkit-scrollbar-track{
+     background:#a8a8a8b6;
+  }
+  .swiper-container::-webkit-scrollbar{
+    height: 2px;
+  }
+  .swiper-container::-webkit-scrollbar-thumb{
+     background: #4F4F4F !important;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 12px;
+    
+    height: 100%;
+    position: relative;
+  }
+  .text-orange
+  {
+      color: #FA9600;
+      font-weight: 400;
+  }
+.accordion-button:not(.collapsed)::after 
+{
+  background:none !important;  
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-left: auto;
+  content: "" ;
+  background:none !important;  
+  transition: transform .2s ease-in-out;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;  
+}
+.accordion-button .fa-edit
+{
+  display: none;
+}
+.accordion-button:hover .fa-edit
+{
+  display: block;
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  color: #777777;
+}
+.inputedit .fa-edit{
+  display: none;
+  position: absolute;
+  height: 20px;
+}
+.inputedit .fa-edit
+{
+  color: #777777 !important;
+}
+.inputedit:hover .fa-edit
+{
+  height: 20px;
+  display: block;
+  position: absolute;
+  top:0px;
+  right: -17px;
+  text-align: right;  
+  color: #9b9b9b;
+  font-size: 12px !important;
+}
+.accordion button:hover
+{
+  background: #47545d !important;
+}
